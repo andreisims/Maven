@@ -57,4 +57,8 @@ This is a hands-on tutorial, on how to launch and configure an EC2 instance, ins
 
 ![mvn test](https://github.com/user-attachments/assets/c89ff291-82d9-4069-8839-48e56ed6da38)
 
+<li>cd to target folder to see test cases</li>
+
+![test cases](https://github.com/user-attachments/assets/59e685e0-c4b2-44b0-b6c0-3d85cf035b18)
+
 
