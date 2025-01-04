@@ -21,7 +21,7 @@ This is a hands-on tutorial, on how to launch and configure an EC2 instance, ins
 
 ![mvn ssh](https://github.com/user-attachments/assets/88b02492-9d6c-4cd7-b650-6dc361295b6a)
 
-<li>Now run the command: sudo apt update.Its primary purpose is to update the package lists for repositories and ensure your system has the latest information about the available software and updates.</li>
+<li>Now run the command: sudo apt update. Its primary purpose is to update the package lists for repositories and ensure your system has the latest information about the available software and updates.</li>
 
 ![sudo update](https://github.com/user-attachments/assets/8f259014-3f8a-4ae9-9a43-dde78c5bac96)
 
@@ -38,5 +38,23 @@ This is a hands-on tutorial, on how to launch and configure an EC2 instance, ins
 <li>We will now install Maven: sudo apt install maven -y, followed by mvn -version</li>
 
 ![mvn version](https://github.com/user-attachments/assets/771bf2ee-9ea2-4219-8b83-fe306a7f7c14)
+
+<li>status shows errors due to no pom file: mvn status</li>
+
+![no pom error](https://github.com/user-attachments/assets/ca7dbb3c-1b34-4e9b-952d-f8e068edbfe8)
+
+<li>Now clone the source code: git clone https://github.com/hkhcoder/vprofile-project.git</li>
+
+![project](https://github.com/user-attachments/assets/3b132b14-7265-40f6-8de6-251d086f58e2)
+
+<li>change into the vprofile-project directory to see the pom file</li>
+
+![pom file](https://github.com/user-attachments/assets/2e057b53-ade2-4e18-bfe7-bfad98a926fe)
+
+<li>We now validate Maven: mvn validate, and run mvn test. Maven will download the dependencies to run the test</li>
+
+![mvn validate](https://github.com/user-attachments/assets/8b5b4444-b026-4916-9a62-cf969150ba91)
+
+![mvn test](https://github.com/user-attachments/assets/c89ff291-82d9-4069-8839-48e56ed6da38)
 
 
