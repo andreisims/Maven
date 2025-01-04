@@ -2,6 +2,19 @@
 
 This is a hands-on tutorial, on how to launch and configure an EC2 instance, install Apache to serve web content, and set up Maven for managing Java-based projects. This will guide you through every step, from choosing the appropriate EC2 instance type to configuring security groups and ensuring your installations run smoothly. By the end of this course, you'll be equipped to host websites and manage Java dependencies on a scalable cloud environment. 
 
+<h2>Project Structure</h2>
+
+```
+vprofile-project/
+├── src/
+│   ├── controllers/    # Handles incoming requests
+│   ├── services/       # Contains business logic
+│   └── index.ts        # Application entry point
+├── .env.example        # Template for environment variables
+├── pom.xml             # Maven project configuration
+└── README.md           # Documentation for the project
+```
+
 <h2>Create and Launch an EC2 instance on AWS</h2>
 <li>Create or Sign into AWS</li>
 <li>name the instance and select the Ubuntu image</li>
