@@ -15,7 +15,28 @@ This is a hands-on tutorial, on how to launch and configure an EC2 instance, ins
 
 <li>accept the remaining default settings and launch the instance</li>
 
+![mvn instance](https://github.com/user-attachments/assets/34ed988d-7e50-4ea1-a575-b628e3334e1a)
 
+<li>SSH into the instance from Git bash. Copy the public IP of the instance and paste in bash using the following command: ssh -i Downloads/buildkey.pem ubuntu@'ip address'</li>
 
+![mvn ssh](https://github.com/user-attachments/assets/88b02492-9d6c-4cd7-b650-6dc361295b6a)
+
+<li>Now run the command: sudo apt update.Its primary purpose is to update the package lists for repositories and ensure your system has the latest information about the available software and updates.</li>
+
+![sudo update](https://github.com/user-attachments/assets/8f259014-3f8a-4ae9-9a43-dde78c5bac96)
+
+<li>git is preinstalled on the ubuntu image</li>
+
+![mvn git](https://github.com/user-attachments/assets/ad5fce1c-5ec3-4fcc-a78e-179ace8e8279)
+
+<li>install the jdk maven dependency: sudo apt search jdk (openjdk-11-jdk). the version will depend on the project. We will be using jdk-11. enter in git: sudo apt install openjdk-11-jdk -y. then java -version to see its latest version</li>
+
+![jdk11](https://github.com/user-attachments/assets/1da8119b-52fd-44f4-bd3c-698e0c1c686d)
+
+![version](https://github.com/user-attachments/assets/5817c09b-2c05-478a-bbff-43264f09c639)
+
+<li>We will now install Maven: sudo apt install maven -y, followed by mvn -version</li>
+
+![mvn version](https://github.com/user-attachments/assets/771bf2ee-9ea2-4219-8b83-fe306a7f7c14)
 
 
