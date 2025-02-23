@@ -61,19 +61,25 @@ https://www.w3schools.com/xml/xml_whatis.asp
 
 ![Image](https://github.com/user-attachments/assets/79afa925-a595-4178-999e-b46b37c85bc9)
 
-<li>git is preinstalled on the ubuntu image</li>
+<li>fetch the source code and build it with Maven. git is preinstalled on the ubuntu image</li>
 
-![mvn git](https://github.com/user-attachments/assets/ad5fce1c-5ec3-4fcc-a78e-179ace8e8279)
-
-<li>install the jdk maven dependency: sudo apt search jdk (openjdk-11-jdk). the version will depend on the project. We will be using jdk-11. enter in git: sudo apt install openjdk-11-jdk -y. then java -version to see its latest version</li>
+![Image](https://github.com/user-attachments/assets/f8bab3ae-89ae-462a-a2cf-779a383bf9b0)
+<h2>install Maven via package manager</h2>
+<li>install the jdk maven dependency: sudo apt search jdk (openjdk-11-jdk). the version will depend on the project. We will be using jdk-11. 
+<li>enter in git: sudo apt install openjdk-11-jdk -y</li>
+<li>then java -version to see its latest version</li>
 
 ![jdk11](https://github.com/user-attachments/assets/1da8119b-52fd-44f4-bd3c-698e0c1c686d)
 
 ![version](https://github.com/user-attachments/assets/5817c09b-2c05-478a-bbff-43264f09c639)
 
-<li>We will now install Maven: sudo apt install maven -y, followed by mvn -version</li>
+<li>We will now install Maven: sudo apt install maven -y</li>
+<li>followed by mvn -version</li>
+<li>wget method if you prefer</li>
+"wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz"
+<li>and extract it: tar xzvf apache-maven-3.9.9-bin.tar.gz</li>
 
-![mvn version](https://github.com/user-attachments/assets/771bf2ee-9ea2-4219-8b83-fe306a7f7c14)
+![Image](https://github.com/user-attachments/assets/61158afd-7c33-4ee3-9841-7fd2cb28121a)
 
 <li>status shows errors due to no pom file: mvn status</li>
 
