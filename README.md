@@ -81,26 +81,33 @@ https://www.w3schools.com/xml/xml_whatis.asp
 
 ![Image](https://github.com/user-attachments/assets/61158afd-7c33-4ee3-9841-7fd2cb28121a)
 
-<li>status shows errors due to no pom file: mvn status</li>
+<li>now move the Maven file, best practice. (sudo mv apache-maven-3.9.9 /opt/)</li>
+https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/opt.html
+<li>check the version: mvn -version</li>
 
-![no pom error](https://github.com/user-attachments/assets/ca7dbb3c-1b34-4e9b-952d-f8e068edbfe8)
+![Image](https://github.com/user-attachments/assets/c3c634ee-e29b-4317-bfe0-cd91c80ed341)
 
-<li>Now clone the source code: git clone https://github.com/hkhcoder/vprofile-project.git</li>
+<h2>Now clone the source code</h2>
+<li>git clone https://github.com/hkhcoder/vprofile-project.git</li>
 
-![project](https://github.com/user-attachments/assets/3b132b14-7265-40f6-8de6-251d086f58e2)
+![Image](https://github.com/user-attachments/assets/45ef71ea-1e7e-4912-80d4-27b4e66fc591)
+
+![Image](https://github.com/user-attachments/assets/e204a1b8-8a50-42bd-acd9-a6c861cb504a)
+
 
 <li>change into the vprofile-project directory to see the pom file</li>
 
 ![pom file](https://github.com/user-attachments/assets/2e057b53-ade2-4e18-bfe7-bfad98a926fe)
 
-<li>We now validate Maven: mvn validate, and run mvn test. Maven will download the dependencies to run the test</li>
+<li>We now validate Maven. This checks and identifies any possible errors in a changelog file that may cause the update goal to fail mvn validate, and run 'mvn validate'</li>
 
-![mvn validate](https://github.com/user-attachments/assets/8b5b4444-b026-4916-9a62-cf969150ba91)
+![Image](https://github.com/user-attachments/assets/dd2874df-8051-4461-93b3-8cc7ca07eac6)
+<li>Maven test: Maven will execute all the phases up to and including the “test” phase. "mvn test"</li>
 
 ![mvn test](https://github.com/user-attachments/assets/c89ff291-82d9-4069-8839-48e56ed6da38)
 
-<li>cd to target folder to see test cases</li>
+<li>target folder contains all the final products that are the result of Maven building your project: "ls", "cd target" </li>
 
-![test cases](https://github.com/user-attachments/assets/59e685e0-c4b2-44b0-b6c0-3d85cf035b18)
+![Image](https://github.com/user-attachments/assets/dd401d52-021a-4f8e-867e-094aa1e9bcdb)
 
 
