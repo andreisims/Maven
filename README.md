@@ -14,29 +14,52 @@ vprofile-project/
 ├── pom.xml             # Maven project configuration
 └── README.md           # Documentation for the project
 ```
+<h2>build process</h2>
+<li>source code from developers (java, .net, C#, etc)</li>
+<li>compile the code </li>
+<li>test the code</li>
+<li>then package the code (jar, war, exe., zip, etc)</li>
+
+![Image](https://github.com/user-attachments/assets/18edda04-8798-4ed7-82d2-566cc6ba9ab2)
+<h2>Maven Phases</h2>
+
+![Image](https://github.com/user-attachments/assets/0faab9cc-447c-4f09-8900-46911191d885)
+
+<li>if any phase is started, Maven will complete all of the previous steps in the phase process</li>
+
+![Image](https://github.com/user-attachments/assets/c32c9387-5a5a-492a-97ed-91a6f5b61e1c)
+<h2>Maven documentation</h2>
+https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+<h2>github repo containing files for the project</h2>
+https://github.com/hkhcoder/vprofile-project
+
+![Image](https://github.com/user-attachments/assets/7af74f0c-8ec1-4cc9-9926-44da92c7ea73)
+<h2>pom.xml is the build file for Maven; the source code</h2>
+
+![Image](https://github.com/user-attachments/assets/044dc779-25e1-4fd8-a977-b541843f25c0)
+<h2>xml documentation </h2>
+https://www.w3schools.com/xml/xml_whatis.asp
 
 <h2>Create and Launch an EC2 instance on AWS</h2>
 <li>Create or Sign into AWS</li>
-<li>name the instance and select the Ubuntu image</li>
+<li>Launch Ubuntu EC2 instance in AWS to fetch the source code: name "BuildServer", Ubuntu, free tier</li>
 
 ![mvn](https://github.com/user-attachments/assets/5b02b28b-53b8-4598-b1f1-4171ca5d8ffb)
 
-<li>use the t2.micro default</li>
-<li>create a keypair</li>
+<li>Create keypair: name buildkey, .pem file, create key pairt</li>
 
-![mvn key](https://github.com/user-attachments/assets/0dba0a1a-1ad7-4b91-9d6b-86df94a8234e)
+![Image](https://github.com/user-attachments/assets/b1cf9bcb-9f9b-4250-84cd-e13a3f4d9dbc)
+<li>keep defaults, launch instance</li>
 
-<li>accept the remaining default settings and launch the instance</li>
+![Image](https://github.com/user-attachments/assets/1372721a-ac04-4457-8eed-2b8e50946f33)
 
-![mvn instance](https://github.com/user-attachments/assets/34ed988d-7e50-4ea1-a575-b628e3334e1a)
+<li>SSH to instance: copy public IP, paste in git bash</li>
 
-<li>SSH into the instance from Git bash. Copy the public IP of the instance and paste in bash using the following command: ssh -i Downloads/buildkey.pem ubuntu@'ip address'</li>
-
-![mvn ssh](https://github.com/user-attachments/assets/88b02492-9d6c-4cd7-b650-6dc361295b6a)
+![Image](https://github.com/user-attachments/assets/de871031-b21d-4975-8f98-6e0520b705aa)
 
 <li>Now run the command: sudo apt update. Its primary purpose is to update the package lists for repositories and ensure your system has the latest information about the available software and updates.</li>
 
-![sudo update](https://github.com/user-attachments/assets/8f259014-3f8a-4ae9-9a43-dde78c5bac96)
+![Image](https://github.com/user-attachments/assets/79afa925-a595-4178-999e-b46b37c85bc9)
 
 <li>git is preinstalled on the ubuntu image</li>
 
