@@ -109,5 +109,22 @@ https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/opt.html
 <li>target folder contains all the final products that are the result of Maven building your project: "ls", "cd target" </li>
 
 ![Image](https://github.com/user-attachments/assets/dd401d52-021a-4f8e-867e-094aa1e9bcdb)
+<li>mvn clean: removes all previously compiled files and other artifacts, ensuring that the next build starts from a clean slate</li>
 
+![Image](https://github.com/user-attachments/assets/40c58025-d903-4afb-8e49-8f7141b9800d)
+<li>mvn install and mvn clean install. "install" will not download any new files if they already exist on your system, where "clean install" removes all previous files and starts from scratch</li>
 
+![Image](https://github.com/user-attachments/assets/ac730156-8caf-43eb-92dc-4e4aec49b056)
+<li>the vprofile-v2.war is the artifact file, which is an archive of the vprofile-v2 file</li>
+<li>view the dependecies</li>
+
+![Image](https://github.com/user-attachments/assets/926ea1eb-7208-47c1-9843-02721b86471a)
+<li>update pom file (vim pom.xml) from version2 (v2) to version3 (v3)</li>
+
+![Image](https://github.com/user-attachments/assets/2906a06a-4065-4af1-9f78-d0c6f06ac074)
+<li>ls target/ (shows current version) </li>
+
+![Image](https://github.com/user-attachments/assets/37742a16-8033-464d-b5f0-0226a75e6c4a)
+<li>mvn clean install shows updated version </li>
+
+![Image](https://github.com/user-attachments/assets/71889d6e-8c4a-4de1-8b57-6a55ad5ddb58)
